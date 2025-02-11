@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Newspaper using flexbox</title>
+</head>
+<body>
+    <h1> Alliance News</h1>
+<h2>SPORTS</h2>
+   <image src="sports.png" alt="" height="250" width="374">
+    <div class="news">
+        <div id="article1">Sports are organized physical activities that promote health, teamwork, and competition</div>
+   
+   <div id="article2">An activity pursued for exercise or pleasure, usually requiring some degree of physical prowess, as hunting, fishing.</div>
+
+<div id="article3">Playing sports increases our brain acuity and muscle strength. Our sense of self-confidence increases when we play sports frequently. We develop our perseverance, willpower, teamwork, and planning through athletics.</div> 
+</div>
+<nav class="navigate">
+    <li>Home</li>
+    <li>About me</li>
+    <li>Contact us</li>
+</nav>
+<style>
+    .navigate{
+        display:flex;
+        gap: 10px;
+
+    }
+    h1{
+        text-align: center;
+        background-color: beige;
+    }
+    h2{
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    .news{
+        background-color: antiquewhite;
+        display: flex;
+        height: 300px;
+        /* width: 500px; */
+        flex-direction: row;
+        justify-content: space-between; 
+    
+    }
+
+    div>div{
+        border: 1px solid rgb(103, 21, 21);
+        flex-basis: 20px;
+    }
+    #article1{
+        flex-grow: 1;
+        flex-basis: 190px;
+        align-self: flex-start;
+    }
+    #article2{
+        flex-grow: 0;
+        flex-basis: 190px;
+    }
+    #article3{
+        flex-grow: 0;
+        flex-basis: 190px; 
+    }
+    body{
+        border: 1px solid black;
+    }
+</style>
+</body>
+</html>
